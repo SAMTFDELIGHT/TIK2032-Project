@@ -3,192 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERSONAL HOMEPAGE</title>
-    <style>
-        /* CSS Styling */
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-        }
-        header {
-            background-color: #1E88E5;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #1565C0;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #82B1FF;
-        }
-        section {
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            color: #000;
-        }
-        body {
-          margin-bottom: 100px; /* Atur margin bawah badan untuk memberikan ruang bagi footer */
-        }
-        footer {
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-          background-color: #1565C0;
-          color: white;
-          text-align: center;
-          padding: 10px 0;
-        }
-    </style>
+    <title>Syaloomitha Amanda</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <a href="#" class="logo">S<span>A</span></a>
 
+        <nav class="navbar">
+            <ul class="hidden" id="list-menu">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>        
+            </ul>
+        </nav>
 
-<header>
-    <h1>PERSONAL HOMEPAGE</h1>
-</header>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+            </div>
 
+    </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <main>
+        <!-- Home START -->
+        <article class="home" id="home">
+            <div class="homeContent">
+                <h1>Hello, I'm</h1>
+                <h1 class="nama">Syaloomitha Amanda </h1>
+                <h1>a <span>Informatics Engineering Student</span></h1>
+                <p>I am studying Informatics Engineering at Sam Ratulangi University. </p>
+            </div>
+            
+            <aside class="fotoDiri">
+                <img src="assets/profilephoto.jpg" alt="fotoDiri">
+            </aside>
+        </article>
+        <!-- Home END -->
+        
+        <!-- Gallery START -->
+        <article class="gallery" id="gallery">
+            <h2 class="heading">- Gallery -</h2>
+            
+            <div class="galleryContainer">
+                <div class="galleryBox">
+                    <img src="assets/praktbdsem3.jpg" alt="Photo 1">
+                </div>
+                
+                <div class="galleryBox">
+                    <img src="assets/wawancarakeikutsertaanpkm2024.jpg" alt="Photo 2">
+                </div>
+                
+                <div class="galleryBox">
+                    <img src="assets/wawancarakecakapansem4.jpg" alt="Photo 3">
+                </div>
+            </div>
+        </article>
+        <!-- Gallery END -->
 
+        <!-- Blog START -->
+        <article class="blog" id="blog">
+            <h2 class="heading">- Blog -</h2>
+            
+            <article>
+                <h3>1. Penggunaan Teknologi dalam Olahraga: Inovasi dan Implikasinya</h3>
+                <p>Artikel ini membahas tentang bagaimana teknologi, khususnya AI, VR, dan AR, telah mengubah cara olahraga dari analisis performa hingga pelatihan dan rehabilitasi. Anda bisa membahas tentang bagaimana AI mengotomatisasi analisis data dari perangkat wearable, memberikan wawasan real-time tentang pengeluaran energi dan tingkat kelelahan atlet, serta bagaimana VR dan AR membantu dalam pengembangan keterampilan dan strategi, serta dalam rehabilitasi dan pencegahan cedera.</p>
+                <cite><a href="https://doi.org/10.4085/1062-6050-0540.19">Windt et al., J Athl Train, 2020</a></cite>
+                <figure>
+                    <img src="assets/technologysport.jpeg" alt="Penggunaan Teknologi dalam Olahraga">
+                    <figcaption>Gambar: Penggunaan Teknologi dalam Olahraga</figcaption>
+                </figure>
+            </article>
 
-<section id="home" style="text-align: center;">
-  <h2>HELLO! I'm</h2>
-  <img src="project.html1/profilephoto.jpg" alt="Syaloomitha Amanda" style="border-radius: 50%; width: 200px; height: 200px;">
-  <h3>Syaloomitha Amanda</h3>
-  <p>I'm a 4th Semester Student currently taking the Web Programming Course.</p>
-</section>
+            <article>
+                <h3>2. Seni dan Teknologi: Menggabungkan Kedua Dunia</h3>
+                <p>Artikel ini membahas tentang bagaimana seni dan teknologi saling mempengaruhi dan berkembang bersama. Anda bisa membahas tentang bagaimana seni digital, VR, dan AR telah memungkinkan seniman untuk menciptakan pengalaman yang lebih imersif dan interaktif, serta bagaimana teknologi telah mempengaruhi cara seni diproduksi dan disajikan kepada penonton.</p>
+                <cite><a href="https://www.academia.edu/43592696/SENI_DIGITAL_WISATA_TEKNOLOGI_AR_PASUA_PA_BERBASIS_KEARIFAN_LOKAL_Digital_Art_of_Augmented_Reality_AR_Technology_Tourism_in_Pasua_Perform_Art_PA_Based_on_Local_Wisdom">Sumber</a></cite>
+                <figure>
+                    <img src="assets/arttechnology.jpeg" alt="Seni dan Teknologi">
+                    <figcaption>Gambar: Seni dan Teknologi</figcaption>
+                </figure>
+            </article>
 
+            <article>
+                <h3>3. Olahraga dan Teknologi: Membangun Masa Depan</h3>
+                <p>Artikel ini membahas tentang bagaimana teknologi, khususnya dalam bidang olahraga, sedang mengubah cara kita berolahraga. Anda bisa membahas tentang bagaimana teknologi seperti wearable devices dan sistem pelacakan otomatis telah memungkinkan atlet untuk mengumpulkan dan menganalisis data mereka dengan lebih efisien, serta bagaimana ini telah mempengaruhi cara pelatih dan atlet merencanakan dan mengevaluasi kegiatan olahraga mereka.</p>
+                <cite><a href="https://doi.org/10.3390/app132312965">Cossich et al., Appl. Sci., 2023</a></cite>
+                <figure>
+                    <img src="assets/sportstechnology.jpeg" alt="Olahraga dan Teknologi">
+                    <figcaption>Gambar: Olahraga dan Teknologi</figcaption>
+                </figure>
+            </article>
 
-<section id="gallery" style="text-align: center;">
-  <h2>Gallery</h2>
-  <p>These are some photos during my time at Informatics UNSRAT:</p>
-  <div style="display: flex; justify-content: center;">
-    <figure style="margin: 10px;">
-      <img src="project.html1/praktbdsem3.jpg" alt="Praktikum Teknologi Basis Data Semester 3" width="200">
-      <figcaption style="margin-top: 5px;">Praktikum Teknologi Basis Data Semester 3</figcaption>
-    </figure>
-    <figure style="margin: 10px;">
-      <img src="project.html1/wawancarakeikutsertaanpkm2024.jpg" alt="Wawancara Keikutsertaan PKM 2024" width="200">
-      <figcaption style="margin-top: 5px;">Wawancara Keikutsertaan PKM 2024</figcaption>
-    </figure>
-    <figure style="margin: 10px;">
-      <img src="project.html1/wawancarakecakapansem4.jpg" alt="Wawancara Mata Kuliah Kecakapan Antar Personal Semester 4" width="200">
-      <figcaption style="margin-top: 5px;">Wawancara Mata Kuliah Kecakapan Antar Personal Semester 4</figcaption>
-    </figure>
-  </div>
-</section>
-   
+        </article>
+        <!-- Blog END -->  
 
-<section id="blog" style="text-align: center;">
-  <h2>Blog</h2>
+        <!-- Contact START -->
+        <article class="contact" id="contact">
+            <h2 class="heading">- Contact -</h2>
 
-  <article>
-    <h3>1. Penggunaan Teknologi dalam Olahraga: Inovasi dan Impaknya</h3>
-    <p>Artikel ini membahas tentang bagaimana teknologi, khususnya AI, VR, dan AR, telah mengubah cara olahraga dari analisis performa hingga pelatihan dan rehabilitasi. Anda bisa membahas tentang bagaimana AI mengotomatisasi analisis data dari perangkat wearable, memberikan wawasan real-time tentang pengeluaran energi dan tingkat kelelahan atlet, serta bagaimana VR dan AR membantu dalam pengembangan keterampilan dan strategi, serta dalam rehabilitasi dan pencegahan cedera.</p>
-    <cite><a href="https://doi.org/10.4085/1062-6050-0540.19">Windt et al., J Athl Train, 2020</a></cite>
-    <figure>
-      <img src="project.html1/technologysport.jpeg" alt="Penggunaan Teknologi dalam Olahraga">
-    </figure>
-  </article>
+            <div class="social-icons">
+                <a href="mailto:syaloomithaamanda124@gmail.com" class="email"><img src="assets/emaillogo.jpeg" alt="Email"></a>
+                <a href="https://www.instagram.com/amandaithasyaloom28" class="instagram" target="_blank"><img src="assets/instagramlogo.jpeg" alt="Instagram"></a>
+                <a href="https://github.com/SAMTFDELIGHT" class="github" target="_blank"><img src="assets/githublogo.jpeg" alt="GitHub"></a>
+                <a href="https://wa.me/085796131704" class="whatsapp" target="_blank"><img src="assets/whatsapplogo.jpeg" alt="WhatsApp"></a>
+            </div>
+        </article>
+        <!-- Contact END -->
 
-  <article>
-    <h3>2. Seni dan Teknologi: Menggabungkan Kedua Dunia</h3>
-    <p>Artikel ini membahas tentang bagaimana seni dan teknologi saling mempengaruhi dan berkembang bersama. Anda bisa membahas tentang bagaimana seni digital, VR, dan AR telah memungkinkan seniman untuk menciptakan pengalaman yang lebih imersif dan interaktif, serta bagaimana teknologi telah mempengaruhi cara seni diproduksi dan disajikan kepada penonton.</p>
-    <cite><a href="https://www.academia.edu/43592696/SENI_DIGITAL_WISATA_TEKNOLOGI_AR_PASUA_PA_BERBASIS_KEARIFAN_LOKAL_Digital_Art_of_Augmented_Reality_AR_Technology_Tourism_in_Pasua_Perform_Art_PA_Based_on_Local_Wisdom">Sumber</a></cite>
-    <figure>
-      <img src="project.html1/arttechnology.jpeg" alt="Seni dan Teknologi">
-    </figure>
-  </article>
+    </main>
 
-  <article>
-    <h3>3. Olahraga dan Teknologi: Membangun Masa Depan</h3>
-    <p>Artikel ini membahas tentang bagaimana teknologi, khususnya dalam bidang olahraga, sedang mengubah cara kita berolahraga. Anda bisa membahas tentang bagaimana teknologi seperti wearable devices dan sistem pelacakan otomatis telah memungkinkan atlet untuk mengumpulkan dan menganalisis data mereka dengan lebih efisien, serta bagaimana ini telah mempengaruhi cara pelatih dan atlet merencanakan dan mengevaluasi kegiatan olahraga mereka.</p>
-    <cite><a href="https://doi.org/10.3390/app132312965">Cossich et al., Appl. Sci., 2023</a></cite>
-    <figure>
-      <img src="project.html1/sportstechnology.jpeg" alt="Olahraga dan Teknologi">
-    </figure>
-  </article>
-</section>
+    <footer class="footer">
+        <div class="footerText">
+            <p>Copyright &copy; 2024 by Syaloomitha Amanda | All Rights Reserved </p>
+        </div>
 
-<style>
-  section#blog {
-    text-align: center;
-  }
-  article {
-    margin-bottom: 40px;
-  }
-  h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  figure {
-    margin: 0;
-  }
-  img {
-    max-width: 100%;
-    max-height: 200px; /* Adjust this value as needed */
-    display: block;
-    margin: 0 auto;
-  }
-  cite {
-    display: block;
-    margin-top: 10px;
-    font-style: italic;
-  }
-</style>
-
-
-<section id="contact" style="text-align: center;">
-  <h2>Contact</h2>
-  <div style="margin-top: 20px;">
-    <a href="mailto:syaloomithaamanda124@gmail.com" target="_blank" style="margin-right: 20px; display: inline-block; transform: scale(1); transition: transform 0.3s;">
-      <img src="project.html1/emaillogo.jpeg" alt="Email" style="width: 40px; height: 40px; background-color: white; padding: 0;">
-    </a>
-    <a href="mailto:syaloomithamadawara026@student.unsrat.ac.id" target="_blank" style="margin-right: 20px; display: inline-block; transform: scale(1); transition: transform 0.3s;">
-      <img src="project.html1/emaillogo.jpeg" alt="Email" style="width: 40px; height: 40px; background-color: white; padding: 0;">
-    </a>
-    <a href="https://wa.me/6285796131704" target="_blank" style="margin-right: 20px; display: inline-block; transform: scale(1); transition: transform 0.3s;">
-      <img src="project.html1/whatsapplogo.jpeg" alt="WhatsApp" style="width: 40px; height: 40px; background-color: white; padding: 0;">
-    </a>
-    <a href="https://www.instagram.com/amandaithasyaloom28/" target="_blank" style="margin-right: 20px; display: inline-block; transform: scale(1); transition: transform 0.3s;">
-      <img src="project.html1/instagramlogo.jpeg" alt="Instagram" style="width: 40px; height: 40px; background-color: white; padding: 0;">
-    </a>
-    <a href="https://github.com/SAMTFDELIGHT" target="_blank" style="display: inline-block; transform: scale(1); transition: transform 0.3s;">
-      <img src="project.html1/githublogo.jpeg" alt="GitHub" style="width: 40px; height: 40px; background-color: white; padding: 0;">
-    </a>
-  </div>
-</section>
-
-
-<footer>
-    <p>&copy; 2024 My Portfolio</p>
-</footer>
+        <div class="footer-icontop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>
