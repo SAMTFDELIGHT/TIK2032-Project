@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -246,4 +246,9 @@ font-weight: 600;
 .footer .footerText p {
     font-size: 1.5rem;
     border: 2px solid #191f36;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
 }
