@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -84,6 +84,14 @@ nav {
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 7rem;
+}
+
+.homeContent {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -106,14 +114,35 @@ font-weight: 700;
 }
 
 .fotoDiri img {
-width: 50%;
-height: 50%;
-margin: 5rem 5rem 5rem 20rem ;
+width: 30%;
+height: 30%;
+margin: 5rem 5rem 5rem 50rem ;
 border-radius: 50%;
 }
 
 .homeContent p {
 font-size: 1.6rem;
+}
+
+.sosialMedia a {
+display: inline-flex;
+justify-content:center ;
+align-items:center ;
+width: 4rem;
+height: 4rem;
+background: transparent;
+border: .2rem solid var(--mainColor);
+border-radius: 50%;
+font-size: 2rem;
+color: var(--mainColor);
+margin: 3rem 1.5rem 3rem 0;
+transition: .5s ease;
+}
+
+.sosialMedia a:hover {
+background: var(--mainColor);
+color: var(--snd-bgColor);
+box-shadow: 0 0 1rem var(--mainColor);
 }
 
 .button {
@@ -133,122 +162,394 @@ font-weight: 600;
     color: var(--baseColor);
 }
 
-
-.gallery {
+.about {
     margin-top: 15rem;
     color: var(--bgColor);
+    
 }
 
 .heading {
     font-size: 3rem;
 }
-
-.galleryContainer {
+ 
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.galleryBox {
-    flex-basis: 30%;
-    margin-bottom: 2rem;
+ .about-col-1 {
+    flex-basis: 35%;
 }
 
-.galleryBox img {
+.about-col-1 img {
     width: 100%;
     border-radius: 1.5rem;
 }
 
+.about-col-2 {
+    flex-basis: 60%;
+}
 
-.blog h2 {
+.about-col-2 h1 {
+    font-size: 3rem;
+}
+
+.about-col-2 p {
+    font-size: 1.5rem;
+}
+
+.aboutList {
+    display: flex;
+    margin : 20px 0 40px;
+}
+
+.aboutSkill h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.aboutEducation h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5rem;
+
+}
+
+.aboutSkill ul li {
+    list-style: none;
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.aboutEducation ul li {
+    list-style: none;
+    margin: 0.8rem 0 0 5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.gallery h2 {
     margin-bottom: 4rem;
     margin-top: 10rem;
     text-align: center;
 }
 
-.blog article {
-    margin-bottom: 4rem;
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    align-items: center;
 }
 
-.blog article h3 {
-    font-size: 2rem;
-}
-
-.blog article p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.blog article cite {
-    display: block;
-    margin-top: 1rem;
-    font-style: italic;
-}
-
-.blog article figure {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.blog article img {
-    max-width: 100%;
-    height: auto;
+.galleryContainer .galleryBox {
+    position: relative;
     border-radius: 1rem;
     box-shadow: 0 0 2rem var(--bgColor);
-    transition: transform 0.5s ease;
+    overflow: hidden;
+    display: flex;
+}
+
+.galleryBox img {
+    width: 100%;
+    transition: .5s ease;
     opacity: 0.7;
 }
 
-.blog article img:hover {
+.galleryBox:hover img {
     transform: scale(1.1);
 }
 
-.blog article figcaption {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #888;
-    font-style: italic;
+.galleryBox .galleryLayer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), var(--mainColor));
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    padding: 0 3rem;
+    transform: translateY(100%);
+    transition: .7s ease;
+
 }
 
+.galleryBox:hover .galleryLayer {
+    transform: translateY(0);
+}
+
+.galleryLayer h4 {
+    font-size: 2.5rem;
+}
+
+.galleryLayer p {
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+}
+
+.galleryLayer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--bgColor);
+    border-radius: 50% ;
+}
+
+.galleryLayer a i {
+    font-size: 2rem;
+    color: var(--baseColor);
+}
+
+.Blog h2 {
+    margin-bottom: 4rem;
+    margin-top: 10rem;
+    text-align: center;
+ 
+  }
+  .Blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .Blog-container .Blog-box {
+    flex: 1 1 30rem;
+    background: #00ff1a;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #1f242d;
+    transition: .5s ease;
+  }
+  .Blog-container .Blog-box:hover{
+    border-color: #0ef;
+    transform: scale(1.02);
+  }
+  .Blog-box i{
+    font-size: 7rem;
+    color: #0ef;
+  }
+  .Blog-box h3{
+    font-size: 2.6rem;
+  }
+  .Blog-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+  }
 
 .contact {
     margin-top: 10rem;
+
 }
 
 .contact h2 {
-    margin: 4rem 0;
+    margin: 4rem 0 4rem 0 ;
     text-align: center;
 }
 
-.social-icons {
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .inputBox {
     display: flex;
-    justify-content: center;
-    margin-top: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.social-icons a {
-    display: inline-block;
-    margin: 0 1rem;
+.contact form .inputBox input, 
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--bgColor);
+    background: var(--mainColor);
+    border-radius: 2rem;
+    margin: 1rem 0;
 }
 
-.social-icons img {
-    width: 50px; /* Ubah ukuran sesuai kebutuhan */
-    height: 50px; /* Ubah ukuran sesuai kebutuhan */
-    border-radius: 50%; /* Untuk membuat gambar berbentuk lingkaran */
-    transition: transform 0.3s ease; /* Efek hover */
+.contact form .inputBox input {
+    width: 48%;
+    justify-content: space-between;
 }
 
-.social-icons a:hover img {
-    transform: scale(1.2); /* Efek zoom pada gambar saat dihover */
+.contact form textarea {
+    resize: none;
 }
 
-.footer .footerText p {
-    font-size: 1.5rem;
-    border: 2px solid #191f36;
+.contact form .button {
+    margin-top: 2rem;
+    cursor: pointer;
 }
 
 .footer {
-    text-align: center;
-    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bgColor);
+}
+
+.footerText{
+    font-size: 1.6rem;
+    color: var(--baseColor);
+}
+
+.footer-icontop {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background: var(--baseColor);
+    border-radius: .8rem;
+    transition: 1s ease;
+}
+
+.footer-icontop a:hover {
+    box-shadow: 0 0 1rem var(--mainColor);
+
+}
+
+.footer-icontop a i {
+    font-size: 2.4rem;
+    color: var(--bgColor);
+}
+
+/* RESPONSIVE */
+/* @media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+} */
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    article {
+        padding: 10rem 3%;
+    }
+
+    .skills {
+        padding: 5rem;
+    }
+
+    .gallery {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media (max-width: 768px){
+   .navbar {
+    flex-wrap: wrap;
+   }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 2rem;
+        padding: 3rem 3rem 3rem 3rem ;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+    .home {
+        flex-direction: column;
+    }
+
+    .homeContent{
+        order: 2;
+    }
+    .homeContent h3 {
+        font-size: 2.6rem;
+    }
+    .homeContent h1 {
+        font-size: 5rem;
+    }
+    .fotoDiri img {
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .gallery h2 {
+        margin-bottom: 3rem;
+    }
+
+    .galleryContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 617px) {
+        .galleryContainer {
+            grid-template-columns: 1fr;
+        }
+
+        .home .fotoDiri img {
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (max-width:450px) {
+        html {
+            font-size: 50%;
+        }
+
+
+        .about-col-1 img {
+            display: none;
+        }
+
+        .about {
+            margin-top: 0;
+        }
+
+        .gallery {
+            margin-top: 0;
+        }
+
+        .contact {
+            margin-top:    0;
+        }
+
+
+        .contact form .inputBox input {
+            width: 100%;
+        }
+    }
+
 }
