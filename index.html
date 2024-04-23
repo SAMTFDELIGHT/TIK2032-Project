@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syaloomitha Amanda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
@@ -13,104 +15,167 @@
         <nav class="navbar">
             <ul class="hidden" id="list-menu">
                 <li><a href="#home" >Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>        
             </ul>
         </nav>
+
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+            </div>
+
     </header>
 
     <main>
         <!-- Home START -->
         <article class="home" id="home">
             <div class="homeContent">
-                <h1>Hello, I'm</h1>
+                <div class="tulisan">
+                    <h1>Hello, Iam</h1>
                 <h1 class="nama">Syaloomitha Amanda </h1>
                 <h1>a <span>Informatics Engineering Student</span></h1>
                 <p>I am studying Informatics Engineering at Sam Ratulangi University. </p>
-            </div>
+        
+                <div class="sosialMedia">
+                <a href="https://www.instagram.com/amandaithasyaloom28" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/SAMTFDELIGHT" target="_blank"><i class="fa-brands fa-github"></i></a> 
+                </div>
+                </div>
+                
             
             <aside class="fotoDiri">
-                <img src="project.html1/profilephoto.jpg" alt="fotoDiri">
+                <img src="project.html1/profilephoto.jpg" alt="">
             </aside>
         </article>
         <!-- Home END -->
-        
-        <!-- Gallery START -->
-        <article class="gallery" id="gallery">
-            <h2 class="heading">- Gallery -</h2>
-            
-            <div class="galleryContainer">
-                <div class="galleryBox">
-                    <img src="project.html1/praktbdsem3.jpg" alt="Photo 1">
-                </div>
-                
-                <div class="galleryBox">
-                    <img src="project.html1/wawancarakeikutsertaanpkm2024.jpg" alt="Photo 2">
-                </div>
-                
-                <div class="galleryBox">
-                    <img src="project.html1/wawancarakecakapansem4.jpg" alt="Photo 3">
+
+        <!-- About START -->
+        <article class="about" id="about">
+            <div class="aboutContainer">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="project.html1/profilephoto.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="heading"> - About <span>Me</span> -</h2>
+                        <p>I am studying Informatics Engineering at Sam Ratulangi University.</p>
+
+                        <div class="aboutList">
+                            <div class="aboutEducation" >
+                                <h3>Education</h3>
+                                <ul>
+                                    <li><span>2022-Now</span><br>S1 Teknik Informatika Universitas Sam Ratulangi Manado</li>
+                                    <li><span>2019-2022</span><br>SMA NEGERI 1 KAWANGKOAN </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </article>
+        <!-- About END -->
+
+        <!-- Gallery START -->
+        <article class="gallery" id="gallery">
+                <h2 class="heading">- Gallery <span>Projects</span> -</h2>
+
+                <div class="galleryContainer">
+                    <div class="galleryBox">
+                        <img src="project.html1/praktbdsem3.jpg" alt="">
+                        <div class="galleryLayer">
+                            <h4>Praktikum</h4>
+                            <p>Teknologi Basis Data - 2023</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="galleryBox">
+                        <img src="project.html1/wawancarakecakapansem4.jpg" alt="">
+                        <div class="galleryLayer">
+                            <h4>Wawancara</h4>
+                            <p>Kecakapan Antar Personal - 2024</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="galleryBox">
+                        <img src="project.html1/wawancarakeikutsertaanpkm2024.jpg" alt="">
+                        <div class="galleryLayer">
+                            <h4>Wawancara</h4>
+                            <p> Program Kreatifitas Mahasiswa - 2024.</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
         </article>
         <!-- Gallery END -->
 
         <!-- Blog START -->
         <article class="blog" id="blog">
-            <h2 class="heading">- Blog -</h2>
+            <h2 class="heading">- Blog <span>Articel</span> -</h2>
+
+            <div class="Blog-container">
+                <div class="Blog-box">
+                    <i class='bx bx-book'></i>
+                    <h3>Olahraga dan Teknologi</h3>
+                    <p>Artikel ini membahas tentang bagaimana teknologi, khususnya dalam bidang olahraga, 
+                        sedang mengubah cara kita berolahraga. bagaimana teknologi seperti wearable devices dan sistem 
+                        pelacakan otomatis telah membantu atlet untuk lebih efisien, 
+                        serta bagaimana ini telah mempengaruhi cara pelatih dan atlet merencanakan kegiatan olahraga.</p>
+                </div>
+
+                <div class="Blog-box">
+                    <i class='bx bx-book'></i>
+                    <h3>AR/VR</h3>
+                    <p>AR dan VR telah mengubah cara berinteraksi dengan dunia digital. 
+                        Sementara VR ke dalam lingkungan buatan , AR meningkatkan dunia nyata kita. 
+                         Kedua teknologi ini memiliki potensi , mulai dari penggunaan di bidang pendidikan, hiburan, 
+                         hingga industri kesehatan.
+                        </p>
+                </div>
+        
+                <div class="Blog-box">
+                    <i class='bx bx-book-open'></i>
+                    <h3>Internet of Things (IoT)</h3>
+                    <p>IoT mengacu pada jaringan fisik dari perangkat yang terhubung dan saling berkomunikasi melalui internet. 
+                        hingga mewujudkan kota pintar dengan lampu jalan yang efisien dan sistem transportasi yang terintegrasi. 
+                        Potensi IoT untuk meningkatkan efisiensi, menghemat energi, dan membuat kehidupan sehari-hari lebih nyaman.</p>
+                </div>
             
-            <article>
-                <h3>1. Penggunaan Teknologi dalam Olahraga: Inovasi dan Implikasinya</h3>
-                <p>Artikel ini membahas tentang bagaimana teknologi, khususnya AI, VR, dan AR, telah mengubah cara olahraga dari analisis performa hingga pelatihan dan rehabilitasi. Anda bisa membahas tentang bagaimana AI mengotomatisasi analisis data dari perangkat wearable, memberikan wawasan real-time tentang pengeluaran energi dan tingkat kelelahan atlet, serta bagaimana VR dan AR membantu dalam pengembangan keterampilan dan strategi, serta dalam rehabilitasi dan pencegahan cedera.</p>
-                <cite><a href="https://doi.org/10.4085/1062-6050-0540.19">Windt et al., J Athl Train, 2020</a></cite>
-                <figure>
-                    <img src="project.html1/technologysport.jpeg" alt="Penggunaan Teknologi dalam Olahraga">
-                    <figcaption>Gambar: Penggunaan Teknologi dalam Olahraga</figcaption>
-                </figure>
-            </article>
-
-            <article>
-                <h3>2. Seni dan Teknologi: Menggabungkan Kedua Dunia</h3>
-                <p>Artikel ini membahas tentang bagaimana seni dan teknologi saling mempengaruhi dan berkembang bersama. Anda bisa membahas tentang bagaimana seni digital, VR, dan AR telah memungkinkan seniman untuk menciptakan pengalaman yang lebih imersif dan interaktif, serta bagaimana teknologi telah mempengaruhi cara seni diproduksi dan disajikan kepada penonton.</p>
-                <cite><a href="https://www.academia.edu/43592696/SENI_DIGITAL_WISATA_TEKNOLOGI_AR_PASUA_PA_BERBASIS_KEARIFAN_LOKAL_Digital_Art_of_Augmented_Reality_AR_Technology_Tourism_in_Pasua_Perform_Art_PA_Based_on_Local_Wisdom">Sumber</a></cite>
-                <figure>
-                    <img src="project.html1/arttechnology.jpeg" alt="Seni dan Teknologi">
-                    <figcaption>Gambar: Seni dan Teknologi</figcaption>
-                </figure>
-            </article>
-
-            <article>
-                <h3>3. Olahraga dan Teknologi: Membangun Masa Depan</h3>
-                <p>Artikel ini membahas tentang bagaimana teknologi, khususnya dalam bidang olahraga, sedang mengubah cara kita berolahraga. Anda bisa membahas tentang bagaimana teknologi seperti wearable devices dan sistem pelacakan otomatis telah memungkinkan atlet untuk mengumpulkan dan menganalisis data mereka dengan lebih efisien, serta bagaimana ini telah mempengaruhi cara pelatih dan atlet merencanakan dan mengevaluasi kegiatan olahraga mereka.</p>
-                <cite><a href="https://doi.org/10.3390/app132312965">Cossich et al., Appl. Sci., 2023</a></cite>
-                <figure>
-                    <img src="project.html1/sportstechnology.jpeg" alt="Olahraga dan Teknologi">
-                    <figcaption>Gambar: Olahraga dan Teknologi</figcaption>
-                </figure>
-            </article>
-
-        </article>
-        <!-- Blog END -->  
+                
+            </div>
+        </section>
+        <!-- Blog END -->
 
         <!-- Contact START -->
         <article class="contact" id="contact">
-            <h2 class="heading">- Contact -</h2>
+            <h2 class="heading ">- Contact <span>Me</span> -</h2>
 
-            <div class="social-icons">
-                <a href="mailto:syaloomithaamanda124@gmail.com" class="email"><img src="project.html1/emaillogo.jpeg" alt="Email"></a>
-                <a href="https://www.instagram.com/amandaithasyaloom28" class="instagram" target="_blank"><img src="project.html1/instagramlogo.jpeg" alt="Instagram"></a>
-                <a href="https://github.com/SAMTFDELIGHT" class="github" target="_blank"><img src="project.html1/githublogo.jpeg" alt="GitHub"></a>
-                <a href="https://wa.me/085796131704" class="whatsapp" target="_blank"><img src="project.html1/whatsapplogo.jpeg" alt="WhatsApp"></a>
-            </div>
+            <form action="#">
+                <div class="inputBox">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email Address">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="button">
+            </form>
         </article>
-        <!-- Contact END -->
 
+        <!-- Contact END -->
     </main>
 
     <footer class="footer">
         <div class="footerText">
-            <p>Copyright &copy; 2024 by Syaloomitha Amanda | All Rights Reserved </p>
+            <p>Copyright &copy; 2024 by Syaloomitha Amanda Madawara | All Rights Reserved </p>
         </div>
 
         <div class="footer-icontop">
@@ -118,5 +183,6 @@
         </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>
