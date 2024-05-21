@@ -1,23 +1,47 @@
-<?php
-include 'koneksi.php';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Personal Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="">
+            <img src="assets/profilephoto.jpg" alt="my-avatar" />>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Blog</h1>
 
-// Query untuk mengambil data artikel dari database
-$sql = "SELECT * FROM blog_posts";
-$result = mysqli_query($koneksi, $sql);
+    <?php
+    $mysqli = new mysqli("SA-LAPTOP-QL4TOT5C", "localhost", "localhost", "portfolio_db");
 
-// Periksa jika ada hasil
-if (mysqli_num_rows($result) > 0) {
-    // Loop untuk menampilkan setiap artikel
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "<div class='Blog-box'>";
-        echo "<h3>" . htmlspecialchars($row['title']) . "</h3>";
-        echo "<p>" . nl2br(htmlspecialchars($row['content'])) . "</p>";
-        echo "</div>";
+    if ($mysqli === false) {
+        die("ERROR: Could not connect. " . $mysqli->connect_error);
     }
-} else {
-    echo "<p>Tidak ada artikel ditemukan.</p>";
-}
 
-// Tutup koneksi
-mysqli_close($koneksi);
-?>
+    $sql = "SELECT * FROM Blog";
+    $result = $mysqli>query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo "<article>";
+            echo "h3>".$row['title']."</h3";
+            echo "img src='".$row[image"]."' alt='Coming Soon!>";
+            echo "<p> /$row['content']."</p>;
+            echo "</article>";
+        }
+    } else {
+        echo "0 result";
+    }
+
+    $mysqli->close();
+    ?>
+    
+</body>
